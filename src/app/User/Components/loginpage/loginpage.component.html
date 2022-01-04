@@ -1,20 +1,40 @@
-
-<div class="login__page" >
-    <div class="form">
-        <!-- <form >
-            <mat-form-field class="full-width-input">
-                <input matInput placeholder="Email"  required>
-                <mat-error>
-                  Please provide a valid email address
-                </mat-error>
-              </mat-form-field>
-              <mat-form-field class="full-width-input">
-                <input matInput type="password" placeholder="Password"  required>
-                <mat-error>
-                  Please provide a valid password
-                </mat-error>
-              </mat-form-field>
-              <button mat-raised-button color="primary">Login</button>
-        </form> -->
+<div class="backgroundimage">
+    <div class="maibdiv">
+        <section>
+            <mat-card>
+                <mat-card-title>
+                    <p>OneWavePortel</p>
+                </mat-card-title>
+                <mat-card-subtitle style="margin: 15px;">
+                    <span><img src="../../../../assets/Images/office.png" width="45px" height="35px" style="margin-top: auto;" alt="office logo">Sign in With you organizational account</span>
+                </mat-card-subtitle>
+                <mat-card-content>
+                    <button mat-raised-button color="accent" style="margin: 15px;">Sign in With Outlook</button>
+                    <p class="clcik__link">Contracts <a href="" (click)="OpenForm()">Click here</a>To login</p>
+                    <div class="form" *ngIf="isopen">
+                        <form>
+                            <p>
+                                <mat-form-field>
+                                    <input matInput type="email" placeholder="Email">
+                                </mat-form-field>
+                            </p>
+                            <p>
+                                <mat-form-field>
+                                    <p>
+                                        <input matInput type="password" placeholder="password">
+                                    </p>
+                                </mat-form-field>
+                            </p>
+                            <button mat-raised-button color="primary" class="btn">Login</button>
+                        </form>
+                    </div>
+                    <p class="support">
+                         <img src="../../../../assets/Images/support.png" width="30px" height="30px" alt="Support user">
+                        <a href="#">Suppot</a>
+                    </p>
+                    <mat-card-subtitle>Best view with firefox or chrome browser</mat-card-subtitle>
+                </mat-card-content>
+            </mat-card>
+        </section>
     </div>
 </div>
